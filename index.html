@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyzer</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+
+    <link rel="stylesheet" href="sentiment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="sentiment.html"><img src="globe.png"></a>
+            
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>   
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#aboutus">ABOUT</a></li>
+                    <li><a href="#stackholders">STACKHOLDERS</a></li>
+                    <li><a href="#contactus">CONTACT</a></li>
+                    <li><a href="search.html">SEARCH</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <article id="home"></article>
+        <div class="text-box">
+            <pre><h1 style="color:black; text-align:center">                                                SENTIMENT ANALYZER</h1></pre>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <pre><p style="color:black; text-align:center">
+                
+                                                                                                                                                                                      
+                                                                                                                                                                                               Sentiment, Nothing Can Fail!<br>                                                                                                                                                                                                Without It, Nothing Can Succeed!
+            </p></pre>
+        </div>
+    </section>
+
+   
+    <article id="aboutus"></article>
+    <h1>About Us</h1>
+
+    <section class="about-section">
+        <h2>Our Story</h2>
+        <p>
+            Hello everyone!<br>
+            We are here to help you to know the sentiment of each text on the online shopping platforms including sarcasm and irony detection.
+        </p>
+    </section>
+
+    <section class="team-section">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <img src="MALE.jpg" alt="Team Member 1">
+            <h3>Barath S</h3>
+            <p>Founder</p>
+        </div>
+    </section>
+
+    <article id="stackholders"></article>
+    <section class="course">
+        <h1>Stackholders</h1>
+        <p>THE SENTIMENT ANALYZER STACKHOLDERS</p>
+        <p>NO PROBLEM IS TOO BIG..NO IDEA IS TOO SMALL</p>
+        <div class="row">
+            <div class="course-col">
+                <img src="AMAZON.png" alt="Amazon">
+                <h2>Amazon</h2>
+                <p>Put the customer first. Invent. And be patient.</p>
+            </div>
+            <div class="course-col">
+                <img src="FLIPKART.jpg" alt="Flipkart">
+                <h2>Flipkart</h2>
+                <p>Instead of interrupting, work on attracting</p>
+            </div>
+            <div class="course-col">
+                <img src="MEESHO.png" alt="Meesho">
+                <h2>Meesho</h2>
+                <p>Master the topic, the message, and the delivery</p>
+            </div>
+        </div>
+    </section>
+
+    <article id="contactus"></article>
+    <section class="cta">
+        <br>
+        <h1>Contact Us</h1>
+        <h2>sentimentseekers@gmail.com</h2>
+        <h1>Follow Us</h1>
+        <h2>https://www.linkedin.com/in/sentiseek</h2>
+    </section>
+    <section class="footer">
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function hideMenu() {
+                navLinks.classList.remove("active");
+            }
+
+            function showMenu() {
+                navLinks.classList.add("active");
+            }
+        </script>
+    </section>
+</body>
+
+</html>
